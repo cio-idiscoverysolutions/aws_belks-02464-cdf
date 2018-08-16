@@ -12,6 +12,8 @@ persist_with: aws_belks_02464_default_datagroup
 
 explore: tracker_summary_matrix {}
 
+explore: tracker_source_matrix {}
+
 # - explore: cdf_catalog
 
 # - explore: cdf_convert
@@ -37,5 +39,3 @@ explore: tracker_summary_matrix {}
 # - explore: tracker_hosting
 
 # - explore: tracker_processing
-
-explore: tracker_source_matrix {}
