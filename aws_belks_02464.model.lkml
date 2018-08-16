@@ -38,4 +38,4 @@ explore: tracker_summary_matrix {}
 
 # - explore: tracker_processing
 
-# - explore: tracker_source_matrix
+explore: tracker_source_matrix {}
