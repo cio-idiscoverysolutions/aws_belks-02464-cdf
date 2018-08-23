@@ -106,6 +106,11 @@ view: vw_looker_emp_schedule_v001 {
     sql: ${TABLE}.unit_skey ;;
   }
 
+  dimension: ids_name {
+    type:  string
+    sql:  ${TABLE}.ids_name ;;
+  }
+
   measure: count {
     type: count
     drill_fields: [last_name, first_name, unit_name]
