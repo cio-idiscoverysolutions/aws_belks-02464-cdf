@@ -1,5 +1,5 @@
 view: cdf_reflexis_emp_schedule_20180821_001_employee_details_person_id_master {
-  sql_table_name: dbo.CDF_Reflexis_EmpSchedule_20180821_001_Employee Details Person_id_Master ;;
+  sql_table_name: dbo.[CDF_Reflexis_EmpSchedule_20180821_001_Employee Details Person_id_Master] ;;
 
   dimension: _annual_rt_ {
     type: string
