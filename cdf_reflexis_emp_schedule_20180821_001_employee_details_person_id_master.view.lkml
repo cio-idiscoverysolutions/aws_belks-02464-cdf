@@ -70,6 +70,11 @@ view: cdf_reflexis_emp_schedule_20180821_001_employee_details_person_id_master {
     sql: ${TABLE}.TERMINATION_DT ;;
   }
 
+  dimension: ids_name {
+    type:  string
+    sql:  ${TABLE}.IDS_Name ;;
+  }
+
   measure: count {
     type: count
     drill_fields: [last_name, first_name]
