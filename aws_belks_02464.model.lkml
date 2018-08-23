@@ -14,9 +14,6 @@ explore: tracker_summary_matrix {}
 
 explore: tracker_source_matrix {}
 
-explore: cdf_reflexis_emp_schedule_20180821_001_employee_details_person_id_master {}
-
-explore: cdf_reflexis_emp_schedule_20180821_001_master {}
 
 # - explore: cdf_catalog
 
