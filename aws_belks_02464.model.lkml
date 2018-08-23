@@ -14,6 +14,7 @@ explore: tracker_summary_matrix {}
 
 explore: tracker_source_matrix {}
 
+explore: vw_looker_emp_schedule_v001   {}
 
 # - explore: cdf_catalog
 
