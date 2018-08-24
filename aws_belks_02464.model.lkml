@@ -16,6 +16,28 @@ explore: tracker_source_matrix {}
 
 explore: vw_looker_emp_schedule_v001   {}
 
+explore: cdf_reflexis_emp_schedule_20180821_001_employee_details_person_id_master {}
+
+explore: cdf_reflexis_emp_schedule_20180821_001_master {}
+
+explore: cdf_reflexis_emp_schedule_20180821_001_unit_skey_mapping_master {}
+
+explore: cdf_reflexis_leave_requests_20180821_001_reason_cd_mapping_master {}
+
+explore: cdf_reflexis_leave_requests_20180821_001_request_status_cd_mapping_master {}
+
+explore: cdf_reflexis_leave_requests_20180821_001_sample_leave_request_data_master {}
+
+explore: cdf_reflexis_project_activity_history__20180816_001_master {}
+
+explore: cdf_reflexis_sched_overrides_20180821_001_reflexis_sched_overrides_master {}
+
+explore: cdf_reflexis_sched_overrides_20180821_001_transaction_code_mapping_master {}
+
+explore: cdf_reflexis_sched_overrides_20180821_001_unit_skey_mapping_master {}
+
+explore: cdf_reflexis_task_activity_history_20180816_001_master {}
+
 # - explore: cdf_catalog
 
 # - explore: cdf_convert
