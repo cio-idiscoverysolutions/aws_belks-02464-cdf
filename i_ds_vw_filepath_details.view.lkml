@@ -37,12 +37,12 @@ view: i_ds_vw_filepath_details {
   }
 
   dimension: files {
-    type: string
+    type: number
     sql: ${TABLE}.Files ;;
   }
 
   dimension: folders {
-    type: string
+    type: number
     sql: ${TABLE}.Folders ;;
   }
 
@@ -130,8 +130,22 @@ view: i_ds_vw_filepath_details {
     sql: ${TABLE}.SIZEGB ;;
   }
 
-  measure: sum {
+  measure: sumSizeGB {
     type: sum
-    drill_fields: [sizegb]
+    drill_fields: [full_path,sizegb]
+  }
+
+  measure: sumFiles {
+    type: sum
+    drill_fields: [full_path,files]
+  }
+  measure: sumFolders {
+    type: sum
+    drill_fields: [full_path,folders]
+  }
+
+  measure: countOwner {
+    type: count_distinct
+    drill_fields: [owner]
   }
 }
