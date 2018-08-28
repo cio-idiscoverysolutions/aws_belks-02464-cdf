@@ -37,7 +37,7 @@ view: i_ds_vw_filepath_details {
   }
 
   dimension: files {
-    type: string
+    type: number
     sql: ${TABLE}.Files ;;
   }
 
@@ -48,7 +48,7 @@ view: i_ds_vw_filepath_details {
 
   dimension: full_path {
     type: string
-    sql: ${TABLE}."Full Path" ;;
+    sql: ${TABLE}.FullPath ;;
   }
 
   dimension_group: ids_date_loaded {
@@ -130,22 +130,24 @@ view: i_ds_vw_filepath_details {
     sql: ${TABLE}.SIZEGB ;;
   }
 
-  measure: Full_Path {
+
+
+  measure: FullPath {
     type: count_distinct
-    drill_fields: [full_path]
+    drill_fields: [owner]
   }
 
   measure: SizeGB {
     type: sum
-    drill_fields: [full_path]
+    drill_fields: [FullPath]
   }
 
   measure: Files {
     type: sum
-    drill_fields: [full_path]
+    drill_fields: [FullPath]
   }
   measure: Folders {
     type: sum
-    drill_fields: [full_path]
+    drill_fields: [FullPath]
   }
 }
