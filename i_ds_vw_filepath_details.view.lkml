@@ -131,8 +131,8 @@ view: i_ds_vw_filepath_details {
   }
 
   measure: count {
-    type: count
-    drill_fields: [full_path, owner]
+    type: count_distinct
+    drill_fields: [owner, full_path]
   }
 
   measure: SizeGB {
@@ -146,10 +146,6 @@ view: i_ds_vw_filepath_details {
   }
   measure: Folders {
     type: sum
-    drill_fields: [full_path]
-  }
-  measure: Owner {
-    type: count_distinct
     drill_fields: [full_path]
   }
 }
