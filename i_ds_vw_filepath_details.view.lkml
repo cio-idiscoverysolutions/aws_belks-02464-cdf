@@ -90,7 +90,9 @@ view: i_ds_vw_filepath_details {
       quarter,
       year
     ]
-    sql: ${TABLE}."Last Accessed" ;;
+    convert_tz: no
+    datatype: date
+    sql: ${TABLE}.LastAccessed ;;
   }
 
   dimension_group: last_modified {
@@ -105,7 +107,7 @@ view: i_ds_vw_filepath_details {
     ]
     convert_tz: no
     datatype: date
-    sql: ${TABLE}."Last Modified" ;;
+    sql: ${TABLE}.LastModified ;;
   }
 
   dimension: owner {
@@ -128,6 +130,7 @@ view: i_ds_vw_filepath_details {
     sql: ${TABLE}.SIZEGB ;;
   }
 
+
   measure: FullpAth {
     type: count
     drill_fields: [FullpAth]
@@ -149,6 +152,16 @@ view: i_ds_vw_filepath_details {
   }
   measure: Folders {
     type: sum
+    drill_fields: [FullPath]
+  }
+
+  measure: LastAccessed {
+    type: min
+    drill_fields: [FullPath]
+  }
+
+  measure: Lastaccessed {
+    type: max
     drill_fields: [FullPath]
   }
 }
