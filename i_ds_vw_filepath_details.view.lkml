@@ -166,4 +166,17 @@ view: i_ds_vw_filepath_details {
     sql:  MAX(${TABLE}.LastAccessed);;
     convert_tz: no
   }
+
+
+  measure: LastModified {
+    type: date
+    sql:  MIN(${TABLE}.LastModified);;
+    convert_tz: no
+  }
+
+  measure: Lastmodified {
+    type: date
+    sql:  MAX(${TABLE}.LastModified);;
+    convert_tz: no
+  }
 }
