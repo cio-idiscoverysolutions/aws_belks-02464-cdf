@@ -128,7 +128,10 @@ view: i_ds_vw_filepath_details {
     sql: ${TABLE}.SIZEGB ;;
   }
 
-
+  measure: FullpAth {
+    type: count
+    drill_fields: [FullpAth]
+  }
 
   measure: FullPath {
     type: count_distinct
