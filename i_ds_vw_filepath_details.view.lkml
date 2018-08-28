@@ -90,8 +90,6 @@ view: i_ds_vw_filepath_details {
       quarter,
       year
     ]
-    convert_tz: no
-    datatype: date
     sql: ${TABLE}."Last Accessed" ;;
   }
 
