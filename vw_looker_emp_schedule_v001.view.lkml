@@ -115,4 +115,12 @@ view: vw_looker_emp_schedule_v001 {
     type: count
     drill_fields: [last_name, first_name, unit_name]
   }
+
+  measure:  sum_duration {
+    type:  sum
+    sql: ${TABLE}."duration(min)" ;;
+
+    }
+
+
 }
