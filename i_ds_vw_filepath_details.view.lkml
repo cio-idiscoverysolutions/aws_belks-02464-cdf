@@ -130,10 +130,6 @@ view: i_ds_vw_filepath_details {
     sql: ${TABLE}.SIZEGB ;;
   }
 
-  measure: count {
-    type: count_distinct
-    drill_fields: [owner, full_path]
-  }
 
   measure: SizeGB {
     type: sum
