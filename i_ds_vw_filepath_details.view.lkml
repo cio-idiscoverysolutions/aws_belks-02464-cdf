@@ -6,9 +6,29 @@ view: i_ds_vw_filepath_details {
     sql: ${TABLE}."% of Parent (Allocated)" ;;
   }
 
-  dimension: allocated {
+  dimension: actual_allocation {
     type: string
+    sql: ${TABLE}."Actual allocation" ;;
+  }
+
+  dimension: actual_size {
+    type: string
+    sql: ${TABLE}."Actual Size" ;;
+  }
+
+  dimension: allocated {
+    type: number
     sql: ${TABLE}.Allocated ;;
+  }
+
+  dimension: allocated_uom {
+    type: string
+    sql: ${TABLE}.AllocatedUOM ;;
+  }
+
+  dimension: allocatedgb {
+    type: number
+    sql: ${TABLE}.ALLOCATEDGB ;;
   }
 
   dimension: data_source {
@@ -60,13 +80,33 @@ view: i_ds_vw_filepath_details {
     sql: ${TABLE}.IDS_SourceID ;;
   }
 
-  dimension: last_accessed {
-    type: string
+  dimension_group: last_accessed {
+    type: time
+    timeframes: [
+      raw,
+      date,
+      week,
+      month,
+      quarter,
+      year
+    ]
+    convert_tz: no
+    datatype: date
     sql: ${TABLE}."Last Accessed" ;;
   }
 
-  dimension: last_modified {
-    type: string
+  dimension_group: last_modified {
+    type: time
+    timeframes: [
+      raw,
+      date,
+      week,
+      month,
+      quarter,
+      year
+    ]
+    convert_tz: no
+    datatype: date
     sql: ${TABLE}."Last Modified" ;;
   }
 
@@ -76,12 +116,22 @@ view: i_ds_vw_filepath_details {
   }
 
   dimension: size {
-    type: string
+    type: number
     sql: ${TABLE}.Size ;;
   }
 
-  measure: count {
-    type: count
-    drill_fields: []
+  dimension: size_uom {
+    type: string
+    sql: ${TABLE}.SizeUOM ;;
+  }
+
+  dimension: sizegb {
+    type: number
+    sql: ${TABLE}.SIZEGB ;;
+  }
+
+  measure: sum {
+    type: sum
+    drill_fields: [sizegb]
   }
 }
