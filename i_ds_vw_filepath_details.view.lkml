@@ -150,6 +150,6 @@ view: i_ds_vw_filepath_details {
   }
   measure: Owner {
     type: count_distinct
-    drill_fields: [owner]
+    drill_fields: [full_path]
   }
 }
