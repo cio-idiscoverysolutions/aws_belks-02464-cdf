@@ -38,6 +38,8 @@ explore: cdf_reflexis_sched_overrides_20180821_001_unit_skey_mapping_master {}
 
 explore: cdf_reflexis_task_activity_history_20180816_001_master {}
 
+explore: i_ds_vw_filepath_details {}
+
 # - explore: cdf_catalog
 
 # - explore: cdf_convert
