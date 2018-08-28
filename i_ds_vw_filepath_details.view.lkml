@@ -156,12 +156,14 @@ view: i_ds_vw_filepath_details {
   }
 
   measure: LastAccessed {
-    type: min
-    drill_fields: [FullPath]
+    type: date
+    sql:  MIN(${TABLE}.LastAccessed);;
+    convert_tz: no
   }
 
   measure: Lastaccessed {
-    type: max
-    drill_fields: [FullPath]
+    type: date
+    sql:  MAX(${TABLE}.LastAccessed);;
+    convert_tz: no
   }
 }
