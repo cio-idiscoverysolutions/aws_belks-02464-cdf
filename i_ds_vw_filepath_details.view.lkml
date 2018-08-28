@@ -140,12 +140,12 @@ view: i_ds_vw_filepath_details {
     drill_fields: [full_path]
   }
 
-  measure: fileCount {
+  measure: Files {
     type: sum
-    drill_fields: [files]
+    drill_fields: [full_path]
   }
-  measure: folderCount {
+  measure: Folders {
     type: sum
-    drill_fields: [folders]
+    drill_fields: [full_path]
   }
 }
