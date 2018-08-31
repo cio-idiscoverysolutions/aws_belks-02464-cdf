@@ -6,6 +6,11 @@ view: vw_looker_emp_info_ppl_trk_wrk_dy {
     sql: ${TABLE}.City ;;
   }
 
+  dimension: days_worked {
+    type: number
+    sql: ${TABLE}.DaysWorked ;;
+  }
+
   dimension: employee_id {
     type: string
     sql: ${TABLE}."employee id" ;;
