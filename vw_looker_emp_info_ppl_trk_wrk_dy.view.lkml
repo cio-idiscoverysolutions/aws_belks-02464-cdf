@@ -126,4 +126,9 @@ view: vw_looker_emp_info_ppl_trk_wrk_dy {
     type: count
     drill_fields: [first_name, last_name, ids_name]
   }
+
+  measure: sum {
+    type: sum
+    drill_fields: [first_name, last_name, ids_name]
+  }
 }
