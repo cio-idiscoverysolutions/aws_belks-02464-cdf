@@ -44,6 +44,8 @@ explore: cdf_file_type_filters_master {}
 
 explore: vw_looker_emp_info_ppl_trk_wrk_dy {}
 
+explore: vw_looker_pay_data_ppl_soft {}
+
 # - explore: cdf_catalog
 
 # - explore: cdf_convert
