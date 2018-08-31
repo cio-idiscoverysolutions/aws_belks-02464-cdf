@@ -89,6 +89,11 @@ view: vw_looker_emp_info_ppl_trk_wrk_dy {
     sql: ${TABLE}."Proposed Location" ;;
   }
 
+  dimension: source {
+    type: string
+    sql: ${TABLE}.Source ;;
+  }
+
   dimension_group: start {
     type: time
     timeframes: [
