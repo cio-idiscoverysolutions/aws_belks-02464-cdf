@@ -127,7 +127,7 @@ view: vw_looker_emp_info_ppl_trk_wrk_dy {
     drill_fields: [first_name, last_name, ids_name]
   }
 
-  measure: sum {
+  measure: daysworked {
     type: sum
     drill_fields: [first_name, last_name, ids_name]
   }
