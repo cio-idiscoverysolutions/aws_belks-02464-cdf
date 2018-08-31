@@ -21,6 +21,11 @@ view: vw_looker_emp_info_ppl_trk_wrk_dy {
     sql: ${TABLE}."First Name" ;;
   }
 
+  dimension: ids_jobgroup {
+    type: string
+    sql: ${TABLE}.idsJobGroup ;;
+  }
+
   dimension: ids_name {
     type: string
     sql: ${TABLE}.ids_name ;;
