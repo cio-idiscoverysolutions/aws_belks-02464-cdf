@@ -132,6 +132,11 @@ view: vw_looker_emp_info_ppl_trk_wrk_dy {
     sql: ${TABLE}.TerminationDate ;;
   }
 
+  dimension: timeGroup {
+    type: string
+    sql: ${TABLE}.timeGroup ;;
+  }
+
   measure: count {
     type: count
     drill_fields: [first_name, last_name, ids_name]
