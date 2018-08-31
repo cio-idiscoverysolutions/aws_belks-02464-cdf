@@ -40,6 +40,8 @@ explore: cdf_reflexis_task_activity_history_20180816_001_master {}
 
 explore: i_ds_vw_filepath_details {}
 
+explore: cdf_file_type_filters_master {}
+
 # - explore: cdf_catalog
 
 # - explore: cdf_convert
