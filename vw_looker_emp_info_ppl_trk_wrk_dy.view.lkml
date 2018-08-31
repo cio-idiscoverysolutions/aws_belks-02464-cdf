@@ -36,6 +36,20 @@ view: vw_looker_emp_info_ppl_trk_wrk_dy {
     sql: ${TABLE}."Last Name" ;;
   }
 
+  dimension_group: last_position {
+    type: time
+    timeframes: [
+      raw,
+      time,
+      date,
+      week,
+      month,
+      quarter,
+      year
+    ]
+    sql: ${TABLE}.LastPositionDate ;;
+  }
+
   dimension: manager {
     type: string
     sql: ${TABLE}.Manager ;;
