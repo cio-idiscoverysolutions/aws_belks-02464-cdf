@@ -74,6 +74,11 @@ view: vw_looker_pay_data_ppl_soft {
     sql: ${TABLE}."Job Title" ;;
   }
 
+  dimension: ids_name {
+    type: string
+    sql: ${TABLE}.ids_name ;;
+  }
+
   dimension: last_name {
     type: string
     sql: ${TABLE}.LastName ;;
