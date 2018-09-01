@@ -64,6 +64,15 @@ view: vw_looker_pay_data_ppl_soft {
     sql: ${TABLE}.HoursWorked ;;
   }
 
+  dimension: ids_name {
+    type: string
+    sql: ${TABLE}.ids_name ;;
+  }
+
+  dimension: ids_nameEY {
+    type: string
+    sql: ${TABLE}.ids_NameEarnYear ;;
+  }
   dimension: job_code {
     type: string
     sql: ${TABLE}."Job Code" ;;
@@ -72,11 +81,6 @@ view: vw_looker_pay_data_ppl_soft {
   dimension: job_title {
     type: string
     sql: ${TABLE}."Job Title" ;;
-  }
-
-  dimension: ids_name {
-    type: string
-    sql: ${TABLE}.ids_name ;;
   }
 
   dimension: last_name {
