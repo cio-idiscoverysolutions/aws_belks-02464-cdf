@@ -143,4 +143,9 @@ view: vw_looker_pay_data_ppl_soft {
     type: count
     drill_fields: [first_name, last_name, manager_name]
   }
+
+  measure: HoursWorked {
+    type: sum
+    drill_fields: [first_name, last_name, manager_name]
+  }
 }
