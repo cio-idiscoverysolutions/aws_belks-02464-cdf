@@ -31,6 +31,21 @@ view: cdf_transcript_request_completed_09052018_180744_master {
     sql: ${TABLE}.IDS_DateLoaded ;;
   }
 
+  dimension_group: ids_completionDate {
+    type: time
+    timeframes: [
+      raw,
+      time,
+      date,
+      week,
+      month,
+      quarter,
+      year
+    ]
+    sql: ${TABLE}.IDS_CompletionDate ;;
+  }
+
+
   dimension: ids_dlvry_id {
     type: number
     sql: ${TABLE}.IDS_DLVRY_ID ;;
