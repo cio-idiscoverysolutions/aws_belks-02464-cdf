@@ -91,14 +91,12 @@ view: cdf_transcript_request_completed_09052018_180744_master {
     drill_fields: [learning_course]
   }
 
-  measure: ids_CompletionDate {
-    type: min
-    drill_fields: []
+  measure: first_complete {
+    sql: MIN(${TABLE}.IDS_CompletionDate) ;;
   }
 
-  measure: Ids_completionDate {
-    type: max
-    drill_fields: []
+  measure: last_complete {
+    sql: MAX(${TABLE}.IDS_CompletionDate) ;;
   }
 
   measure: Worker {
