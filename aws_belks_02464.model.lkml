@@ -54,6 +54,8 @@ explore: cdf_workday_org_data_08302018_001_081831_163408_master {}
 
 explore: cdf_workday_pay_data_08302018_001_master {}
 
+explore: vw_looker_network_data {}
+
 # - explore: cdf_catalog
 
 # - explore: cdf_convert
