@@ -76,6 +76,11 @@ view: cdf_transcript_request_completed_09052018_180744_master {
     drill_fields: [learning_course]
   }
 
+  measure: Worker {
+    type: count_distinct
+    drill_fields: [worker]
+  }
+
   measure: count {
     type: count
     drill_fields: []
