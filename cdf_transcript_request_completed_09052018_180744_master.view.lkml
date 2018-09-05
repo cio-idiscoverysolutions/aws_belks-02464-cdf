@@ -92,10 +92,12 @@ view: cdf_transcript_request_completed_09052018_180744_master {
   }
 
   measure: first_complete {
+    type: date_time
     sql: MIN(${TABLE}.IDS_CompletionDate) ;;
   }
 
   measure: last_complete {
+    type: date_time
     sql: MAX(${TABLE}.IDS_CompletionDate) ;;
   }
 
