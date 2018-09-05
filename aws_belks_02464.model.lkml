@@ -46,6 +46,8 @@ explore: vw_looker_emp_info_ppl_trk_wrk_dy {}
 
 explore: vw_looker_pay_data_ppl_soft {}
 
+explore: cdf_people_answers_user_report_20180829_173735_master {}
+
 # - explore: cdf_catalog
 
 # - explore: cdf_convert
