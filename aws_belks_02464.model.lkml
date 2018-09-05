@@ -58,6 +58,8 @@ explore: vw_looker_network_data {}
 
 explore: cdf_concur_expenses_20180810_master {}
 
+explore: cdf_people_soft_emp_history_08302018_001_master {}
+
 # - explore: cdf_catalog
 
 # - explore: cdf_convert
