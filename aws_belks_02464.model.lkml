@@ -48,6 +48,12 @@ explore: vw_looker_pay_data_ppl_soft {}
 
 explore: cdf_people_answers_user_report_20180829_173735_master {}
 
+explore: cdf_workday_emp_history_08302018_001_master {}
+
+explore: cdf_workday_org_data_08302018_001_081831_163408_master {}
+
+explore: cdf_workday_pay_data_08302018_001_master {}
+
 # - explore: cdf_catalog
 
 # - explore: cdf_convert
