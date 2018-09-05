@@ -76,6 +76,16 @@ view: cdf_transcript_request_completed_09052018_180744_master {
     drill_fields: [learning_course]
   }
 
+  measure: Completion_date {
+    type: min
+    drill_fields: [completion_date]
+  }
+
+  measure: completion_Date {
+    type: max
+    drill_fields: [completion_date]
+  }
+
   measure: Worker {
     type: count_distinct
     drill_fields: [worker]
