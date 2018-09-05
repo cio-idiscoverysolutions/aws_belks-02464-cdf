@@ -60,6 +60,8 @@ explore: cdf_concur_expenses_20180810_master {}
 
 explore: cdf_people_soft_emp_history_08302018_001_master {}
 
+explore: cdf_transcript_request_completed_09052018_180744_master {}
+
 # - explore: cdf_catalog
 
 # - explore: cdf_convert
