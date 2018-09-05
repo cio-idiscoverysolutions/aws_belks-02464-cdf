@@ -59,6 +59,11 @@ view: vw_looker_pay_data_ppl_soft {
     sql: ${TABLE}.FirstName ;;
   }
 
+  dimension: employee_id {
+    type: string
+    sql: ${TABLE}.EmployeeId ;;
+  }
+
   dimension: hours_worked {
     type: number
     sql: ${TABLE}.HoursWorked ;;
