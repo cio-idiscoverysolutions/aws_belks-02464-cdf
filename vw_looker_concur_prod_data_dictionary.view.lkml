@@ -3,12 +3,12 @@ view: vw_looker_concur_prod_data_dictionary {
 
   dimension: data_type {
     type: string
-    sql: ${TABLE}.DataType ;;
+    sql: ${TABLE}.Suggested_Field_Type ;;
   }
 
   dimension: field_name {
     type: string
-    sql: ${TABLE}.FieldName ;;
+    sql: ${TABLE}.Field_Name ;;
   }
 
   measure: count {
