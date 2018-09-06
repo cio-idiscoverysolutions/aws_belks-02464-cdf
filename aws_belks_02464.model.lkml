@@ -67,6 +67,8 @@ explore: vw_looker_people_soft_emp {}
 explore: vw_looker_concur_prod_export {}
 
 explore: vw_looker_concur_prod_data_dictionary {}
+
+explore: vw_looker_concur_prod_summary {}
 # - explore: cdf_catalog
 
 # - explore: cdf_convert
