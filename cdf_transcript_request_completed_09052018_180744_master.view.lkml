@@ -91,7 +91,7 @@ view: cdf_transcript_request_completed_09052018_180744_master {
     drill_fields: []
   }
 
-  measure: distinct {
+  measure: Learning_Course {
     type: count_distinct
     drill_fields: [learning_course]
   }
@@ -106,4 +106,8 @@ view: cdf_transcript_request_completed_09052018_180744_master {
     sql: MAX(${TABLE}.IDS_CompletionDate) ;;
   }
 
+  measure: Worker {
+    type: count_distinct
+    drill_fields: [learning_course]
+  }
 }
