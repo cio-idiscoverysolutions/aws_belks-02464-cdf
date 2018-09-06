@@ -1,7 +1,7 @@
 view: vw_looker_concur_prod_data_dictionary {
   sql_table_name: dbo.vw_looker_ConcurProdDataDictionary ;;
 
-  dimension: data_type {
+  dimension: suggested_field_type {
     type: string
     sql: ${TABLE}.Suggested_Field_Type ;;
   }
