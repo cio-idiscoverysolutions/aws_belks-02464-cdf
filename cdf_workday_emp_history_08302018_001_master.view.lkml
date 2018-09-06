@@ -16,6 +16,11 @@ view: cdf_workday_emp_history_08302018_001_master {
     sql: ${TABLE}.City ;;
   }
 
+  dimension: current_hire_date {
+    type: string
+    sql: ${TABLE}."Current_Hire_Date" ;;
+  }
+
   dimension: effective_date {
     type: string
     sql: ${TABLE}."Effective Date" ;;
@@ -90,6 +95,11 @@ view: cdf_workday_emp_history_08302018_001_master {
     sql: ${TABLE}.Manager ;;
   }
 
+  dimension: original_hire_date {
+    type: string
+    sql: ${TABLE}."Original_Hire_Date" ;;
+  }
+
   dimension: pay_rate_type {
     type: string
     sql: ${TABLE}."Pay Rate Type" ;;
@@ -108,6 +118,11 @@ view: cdf_workday_emp_history_08302018_001_master {
   dimension: status {
     type: string
     sql: ${TABLE}.Status ;;
+  }
+
+  dimension: termination_date {
+    type: string
+    sql: ${TABLE}."Termination_Date" ;;
   }
 
   measure: count {
