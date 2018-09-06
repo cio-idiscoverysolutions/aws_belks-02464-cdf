@@ -110,4 +110,9 @@ view: cdf_transcript_request_completed_09052018_180744_master {
     type: count
     drill_fields: []
   }
+
+  measure: learning_Grade {
+    type: count
+    drill_fields: []
+  }
 }
