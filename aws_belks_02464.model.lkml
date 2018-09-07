@@ -64,12 +64,6 @@ explore: cdf_transcript_request_completed_09052018_180744_master {}
 
 explore: vw_looker_people_soft_emp {}
 
-explore: vw_looker_concur_prod_export {}
-
-explore: vw_looker_concur_prod_data_dictionary {}
-
-explore: vw_looker_concur_prod_summary {}
-
 explore: vw_looker_prod001_concur_data_dictionary_v001 {}
 
 explore: vw_looker_prod001_concur_export_v001 {}
