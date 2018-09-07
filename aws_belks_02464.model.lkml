@@ -69,6 +69,12 @@ explore: vw_looker_concur_prod_export {}
 explore: vw_looker_concur_prod_data_dictionary {}
 
 explore: vw_looker_concur_prod_summary {}
+
+explore: vw_looker_prod001_concur_data_dictionary_v001 {}
+
+explore: vw_looker_prod001_concur_export_v001 {}
+
+explore: vw_looker_prod001_concur_summary_v001 {}
 # - explore: cdf_catalog
 
 # - explore: cdf_convert
