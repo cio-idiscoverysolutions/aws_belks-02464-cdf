@@ -76,6 +76,12 @@ explore: vw_looker_prod000_class_list_export_v001 {}
 
 explore: vw_looker_prod000_class_list_summary_v001 {}
 
+explore: vw_looker_prod002_belku_data_dictionary_v001 {}
+
+explore: vw_looker_prod002_belku_export_v001 {}
+
+explore: vw_looker_prod002_belku_summary_v001 {}
+
 # - explore: cdf_catalog
 
 # - explore: cdf_convert
