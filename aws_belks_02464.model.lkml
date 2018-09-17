@@ -94,6 +94,8 @@ explore: cdf_reflexis_task_activity_history_20180907_001_master {}
 
 explore: cdf_tatc_audit_09142018_master {}
 
+explore: cdf_tatc_audit_det_09142018_master {}
+
 
 # - explore: cdf_catalog
 
