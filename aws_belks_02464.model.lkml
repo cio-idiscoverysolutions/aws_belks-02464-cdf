@@ -82,11 +82,16 @@ explore: vw_looker_prod002_belku_export_v001 {}
 
 explore: vw_looker_prod002_belku_summary_v001 {}
 
-explore: vw_looker_leave_requests_v001 {}
+explore: cdf_reflexis_emp_schedule_20180907_001_master {}
 
-explore: vw_looker_sched_overrides_v001 {}
+explore: cdf_reflexis_leave_requests_20180907_master {}
 
-explore: vw_looker_task_activity_v001 {}
+explore: cdf_reflexis_sched_overrides_20180907_001_reflexis_sched_overrides_master {}
+
+explore: cdf_reflexis_task_manager_project_stm_master {}
+
+explore: cdf_reflexis_task_activity_history_20180907_001_master {}
+
 # - explore: cdf_catalog
 
 # - explore: cdf_convert

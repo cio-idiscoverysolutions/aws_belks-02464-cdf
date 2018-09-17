@@ -1,5 +1,5 @@
-view: vw_looker_task_activity_v001 {
-  sql_table_name: dbo.vw_looker_TaskActivity_v001 ;;
+view: cdf_reflexis_task_activity_history_20180907_001_master {
+  sql_table_name: dbo.CDF_Reflexis_TaskActivityHistory_20180907_001_Master ;;
 
   dimension: completion_date {
     type: string
@@ -21,29 +21,38 @@ view: vw_looker_task_activity_v001 {
     sql: ${TABLE}."End Date" ;;
   }
 
-  dimension: launch_date {
-    type: string
-    sql: ${TABLE}."Launch Date" ;;
+  dimension_group: ids_date_loaded {
+    type: time
+    timeframes: [
+      raw,
+      time,
+      date,
+      week,
+      month,
+      quarter,
+      year
+    ]
+    sql: ${TABLE}.IDS_DateLoaded ;;
   }
 
-  dimension: project_completion {
+  dimension: ids_dlvry_id {
+    type: number
+    sql: ${TABLE}.IDS_DLVRY_ID ;;
+  }
+
+  dimension: ids_source_file {
     type: string
-    sql: ${TABLE}.ProjectCompletion ;;
+    sql: ${TABLE}.IDS_SourceFile ;;
+  }
+
+  dimension: ids_source_id {
+    type: number
+    sql: ${TABLE}.IDS_SourceID ;;
   }
 
   dimension: project_id {
     type: string
     sql: ${TABLE}."Project Id" ;;
-  }
-
-  dimension: project_name {
-    type: string
-    sql: ${TABLE}.ProjectName ;;
-  }
-
-  dimension: project_type_desc {
-    type: string
-    sql: ${TABLE}."Project Type Desc" ;;
   }
 
   dimension: start_date {
@@ -83,6 +92,6 @@ view: vw_looker_task_activity_v001 {
 
   measure: count {
     type: count
-    drill_fields: [project_name]
+    drill_fields: []
   }
 }

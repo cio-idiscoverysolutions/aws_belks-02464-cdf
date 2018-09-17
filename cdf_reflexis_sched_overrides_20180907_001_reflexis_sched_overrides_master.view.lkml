@@ -1,5 +1,5 @@
-view: vw_looker_sched_overrides_v001 {
-  sql_table_name: dbo.vw_looker_SchedOverrides_v001 ;;
+view: cdf_reflexis_sched_overrides_20180907_001_reflexis_sched_overrides_master {
+  sql_table_name: dbo.CDF_Reflexis_SchedOverrides_20180907_001_Reflexis_SchedOverrides_Master ;;
 
   dimension: changed_hours {
     type: string
@@ -16,19 +16,33 @@ view: vw_looker_sched_overrides_v001 {
     sql: ${TABLE}."EMP_BREAK_DURATION(min)" ;;
   }
 
-  dimension: explanation {
-    type: string
-    sql: ${TABLE}.explanation ;;
+  dimension_group: ids_date_loaded {
+    type: time
+    timeframes: [
+      raw,
+      time,
+      date,
+      week,
+      month,
+      quarter,
+      year
+    ]
+    sql: ${TABLE}.IDS_DateLoaded ;;
   }
 
-  dimension: first_name {
-    type: string
-    sql: ${TABLE}.first_name ;;
+  dimension: ids_dlvry_id {
+    type: number
+    sql: ${TABLE}.IDS_DLVRY_ID ;;
   }
 
-  dimension: last_name {
+  dimension: ids_source_file {
     type: string
-    sql: ${TABLE}.last_name ;;
+    sql: ${TABLE}.IDS_SourceFile ;;
+  }
+
+  dimension: ids_source_id {
+    type: number
+    sql: ${TABLE}.IDS_SourceID ;;
   }
 
   dimension: last_update_time {
@@ -48,7 +62,7 @@ view: vw_looker_sched_overrides_v001 {
 
   dimension: notified {
     type: string
-    sql: ${TABLE}.Notified ;;
+    sql: ${TABLE}.NOTIFIED ;;
   }
 
   dimension: old_value {
@@ -71,11 +85,6 @@ view: vw_looker_sched_overrides_v001 {
     sql: ${TABLE}.TRANSACTION_CODE ;;
   }
 
-  dimension: unit_name {
-    type: string
-    sql: ${TABLE}.unit_name ;;
-  }
-
   dimension: unit_skey {
     type: string
     sql: ${TABLE}.UNIT_SKEY ;;
@@ -88,6 +97,6 @@ view: vw_looker_sched_overrides_v001 {
 
   measure: count {
     type: count
-    drill_fields: [last_name, first_name, unit_name]
+    drill_fields: []
   }
 }
