@@ -82,6 +82,11 @@ explore: vw_looker_prod002_belku_export_v001 {}
 
 explore: vw_looker_prod002_belku_summary_v001 {}
 
+explore: vw_looker_leave_requests_v001 {}
+
+explore: vw_looker_sched_overrides_v001 {}
+
+explore: vw_looker_task_activity_v001 {}
 # - explore: cdf_catalog
 
 # - explore: cdf_convert
