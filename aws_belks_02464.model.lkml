@@ -68,17 +68,23 @@ explore: vw_looker_prod001_concur_data_dictionary_v001 {}
 
 explore: vw_looker_prod001_concur_export_v001 {}
 
+explore: vw_looker_prod001_concur_table_v001 {}
+
 explore: vw_looker_prod001_concur_summary_v001 {}
 
 explore: vw_looker_prod000_class_list_data_dictionary_v001 {}
 
 explore: vw_looker_prod000_class_list_export_v001 {}
 
+explore: vw_looker_prod000_class_list_table_v001 {}
+
 explore: vw_looker_prod000_class_list_summary_v001 {}
 
 explore: vw_looker_prod002_belku_data_dictionary_v001 {}
 
 explore: vw_looker_prod002_belku_export_v001 {}
+
+explore: vw_looker_prod002_belku_table_v001 {}
 
 explore: vw_looker_prod002_belku_summary_v001 {}
 
