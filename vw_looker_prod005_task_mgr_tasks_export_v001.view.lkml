@@ -3,7 +3,7 @@ view: vw_looker_prod005_task_mgr_tasks_export_v001 {
 
   dimension: expor {
     type: string
-    sql: ${TABLE}.Expor ;;
+    sql: ${TABLE}.Export ;;
   }
 
   measure: count {
