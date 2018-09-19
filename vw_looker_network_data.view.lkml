@@ -75,6 +75,16 @@ view: vw_looker_network_data {
     sql: ${TABLE}.Owner ;;
   }
 
+  dimension: server {
+    type: string
+    sql: ${TABLE}.ServerName ;;
+  }
+
+  dimension: share {
+    type: string
+    sql: ${TABLE}.PrimaryShareFolder ;;
+  }
+
   dimension: size {
     type: string
     sql: ${TABLE}.Size ;;
