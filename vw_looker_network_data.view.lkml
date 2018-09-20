@@ -17,12 +17,12 @@ view: vw_looker_network_data {
   }
 
   dimension: files {
-    type: string
+    type: number
     sql: ${TABLE}.Files ;;
   }
 
   dimension: folders {
-    type: string
+    type: number
     sql: ${TABLE}.Folders ;;
   }
 
@@ -91,7 +91,7 @@ view: vw_looker_network_data {
   }
 
   dimension: sizeMB {
-    type: string
+    type: number
     sql: ${TABLE}.SizeInMB ;;
   }
 
@@ -100,9 +100,24 @@ view: vw_looker_network_data {
     sql: ${TABLE}.SizeText ;;
   }
 
-
   measure: count {
     type: count
     drill_fields: []
   }
+
+  measure: Files {
+    type: sum
+    drill_fields: []
+  }
+
+  measure: Folders {
+    type: sum
+    drill_fields: []
+  }
+
+  measure: sizemB {
+    type: sum
+    drill_fields: []
+  }
+
 }
