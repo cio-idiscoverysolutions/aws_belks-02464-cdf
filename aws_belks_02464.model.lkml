@@ -114,6 +114,10 @@ explore: vw_looker_prod005_task_mgr_tasks_export_v001 {}
 
 explore: vw_looker_prod005_task_mgr_tasks_summary_v001 {}
 
+explore: cdf_a0003_file_listing_master {}
+
+explore: cdf_a0009_file_listing_master {}
+
 # - explore: cdf_catalog
 
 # - explore: cdf_convert
