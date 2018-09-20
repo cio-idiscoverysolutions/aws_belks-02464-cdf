@@ -95,6 +95,12 @@ view: vw_looker_network_data {
     sql: ${TABLE}.SizeInMB ;;
   }
 
+  dimension: sizetxt {
+    type: string
+    sql: ${TABLE}.SizeText ;;
+  }
+
+
   measure: count {
     type: count
     drill_fields: []
