@@ -115,6 +115,13 @@ view: vw_looker_network_data {
     drill_fields: []
   }
 
+  measure: sizeInGB {
+    type: sum
+    sql: ${TABLE}.SizeInMB/1024 ;;
+    value_format: "0.00"
+    drill_fields: []
+  }
+
   measure: sizeInmB {
     type: sum
     value_format: "0.00"
