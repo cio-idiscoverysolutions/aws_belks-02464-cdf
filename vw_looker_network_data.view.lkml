@@ -115,7 +115,7 @@ view: vw_looker_network_data {
     drill_fields: []
   }
 
-  measure: sizemB {
+  measure: sizeInmB {
     type: sum
     drill_fields: []
   }
