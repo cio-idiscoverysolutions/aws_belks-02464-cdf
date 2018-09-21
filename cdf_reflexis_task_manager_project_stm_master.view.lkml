@@ -117,7 +117,7 @@ view: cdf_reflexis_task_manager_project_stm_master {
   }
 
   dimension: updated_by {
-    type: number
+    type: string
     sql: ${TABLE}."Updated By" ;;
   }
 
