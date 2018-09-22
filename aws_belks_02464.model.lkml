@@ -118,6 +118,16 @@ explore: cdf_a0003_file_listing_master {}
 
 explore: cdf_a0009_file_listing_master {}
 
+explore: cdf_people_soft_job_history_master {}
+
+explore: cdf_people_soft_manager_history_master {}
+
+explore: cdf_people_soft_payroll_history_master {}
+
+explore: cdf_workday_emp_history_master {}
+
+explore: cdf_workday_pay_history_master {}
+
 # - explore: cdf_catalog
 
 # - explore: cdf_convert
