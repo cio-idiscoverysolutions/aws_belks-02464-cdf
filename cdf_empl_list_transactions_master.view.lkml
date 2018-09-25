@@ -84,4 +84,10 @@ view: cdf_empl_list_transactions_master {
     type: count
     drill_fields: []
   }
+
+  measure: trans_NBR {
+    type: average
+    drill_fields: []
+  }
+
 }
