@@ -88,8 +88,7 @@ view: cdf_empl_list_transactions_master {
   dimension_group: trans_time {
     type: time
     timeframes: [
-      raw,
-      time
+      time_of_day
     ]
     sql: ${TABLE}.trans_time ;;
   }
