@@ -7,7 +7,7 @@ view: vw_looker_emp_pos_data {
   }
 
   dimension: empl_id {
-    type: string
+    type: number
     sql: ${TABLE}.empl_id ;;
   }
 
