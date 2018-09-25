@@ -128,6 +128,8 @@ explore: cdf_workday_emp_history_master {}
 
 explore: cdf_workday_pay_history_master {}
 
+explore: cdf_empl_list_transactions_master {}
+
 # - explore: cdf_catalog
 
 # - explore: cdf_convert
