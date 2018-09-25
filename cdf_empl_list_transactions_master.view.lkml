@@ -84,6 +84,16 @@ view: cdf_empl_list_transactions_master {
     ]
     sql: ${TABLE}.trans_date ;;
   }
+
+  dimension_group: trans_time {
+    type: time
+    timeframes: [
+      raw,
+      time
+    ]
+    sql: ${TABLE}.trans_time ;;
+  }
+
   dimension: trans_nbr {
     type: string
     sql: ${TABLE}.TRANS_NBR ;;
