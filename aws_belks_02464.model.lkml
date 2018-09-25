@@ -130,6 +130,8 @@ explore: cdf_workday_pay_history_master {}
 
 explore: cdf_empl_list_transactions_master {}
 
+explore: vw_looker_emp_pos_data {}
+
 # - explore: cdf_catalog
 
 # - explore: cdf_convert
