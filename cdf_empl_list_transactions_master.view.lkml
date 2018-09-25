@@ -70,11 +70,19 @@ view: cdf_empl_list_transactions_master {
     sql: ${TABLE}.STRASSOC_NM ;;
   }
 
-  dimension: trans_date {
-    type: string
-    sql: ${TABLE}.TRANS_DATE ;;
+  dimension_group: trans_date {
+    type: time
+    timeframes: [
+      raw,
+      time,
+      date,
+      week,
+      month,
+      quarter,
+      year
+    ]
+    sql: ${TABLE}.trans_date ;;
   }
-
   dimension: trans_nbr {
     type: string
     sql: ${TABLE}.TRANS_NBR ;;
