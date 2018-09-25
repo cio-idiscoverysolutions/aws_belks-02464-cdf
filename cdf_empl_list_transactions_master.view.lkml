@@ -46,7 +46,8 @@ view: cdf_empl_list_transactions_master {
   }
 
   dimension: mdsesls_tot_rtl {
-    type: string
+    type: number
+    value_format: "$#.00;($#.00)"
     sql: ${TABLE}.MDSESLS_TOT_RTL ;;
   }
 
