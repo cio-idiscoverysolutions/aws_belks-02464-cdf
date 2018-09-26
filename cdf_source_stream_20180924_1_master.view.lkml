@@ -55,6 +55,11 @@ view: cdf_source_stream_20180924_1_master {
     sql: ${TABLE}.IDS_DLVRY_ID ;;
   }
 
+  dimension:iDS_Search_Dkt118_20180925{
+    type: number
+    sql: ${TABLE}.iDS_Search_Dkt118_20180925 ;;
+  }
+
   dimension: ids_source_file {
     type: string
     sql: ${TABLE}.IDS_SourceFile ;;
