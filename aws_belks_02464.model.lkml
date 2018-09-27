@@ -134,6 +134,8 @@ explore: vw_looker_emp_pos_data {}
 
 explore: cdf_source_stream_20180924_1_master {}
 
+explore: cdf_corvel_20180927_master {}
+
 
 # - explore: cdf_catalog
 
