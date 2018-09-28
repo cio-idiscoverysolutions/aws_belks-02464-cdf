@@ -136,6 +136,8 @@ explore: cdf_source_stream_20180924_1_master {}
 
 explore: cdf_corvel_20180927_master {}
 
+explore: cdf_success_factors_20180927_master {}
+
 
 # - explore: cdf_catalog
 
