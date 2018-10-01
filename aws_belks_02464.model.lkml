@@ -138,6 +138,10 @@ explore: cdf_corvel_20180927_master {}
 
 explore: cdf_success_factors_20180927_master {}
 
+explore: vw_looker_prod003_task_mgr_projects_table_v001 {}
+
+explore: vw_looker_prod004_task_mgr_tasks_table_v001 {}
+
 
 # - explore: cdf_catalog
 
