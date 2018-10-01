@@ -1,4 +1,4 @@
-view: vw_looker_prod004_task_mgr_tasks_summary_v001 {
+view: vw_looker_prod005_task_mgr_tasks_summary_v001 {
   sql_table_name: dbo.vw_looker_PROD004_TaskMgrTasks_Summary_v001 ;;
 
   dimension: description {
