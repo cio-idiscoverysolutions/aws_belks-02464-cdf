@@ -102,17 +102,17 @@ explore: cdf_tatc_audit_09142018_master {}
 
 explore: cdf_tatc_audit_det_09142018_master {}
 
-explore: vw_looker_prod004_task_mgr_projects_data_dictionary_v001 {}
+explore: vw_looker_prod003_task_mgr_projects_data_dictionary_v001 {}
 
-explore: vw_looker_prod004_task_mgr_projects_export_v001 {}
+explore: vw_looker_prod003_task_mgr_projects_export_v001 {}
 
-explore: vw_looker_prod004_task_mgr_projects_summary_v001 {}
+explore: vw_looker_prod003_task_mgr_projects_summary_v001 {}
 
-explore: vw_looker_prod005_task_mgr_tasks_data_dictionary_v001 {}
+explore: vw_looker_prod004_task_mgr_tasks_data_dictionary_v001 {}
 
-explore: vw_looker_prod005_task_mgr_tasks_export_v001 {}
+explore: vw_looker_prod004_task_mgr_tasks_export_v001 {}
 
-explore: vw_looker_prod005_task_mgr_tasks_summary_v001 {}
+explore: vw_looker_prod004_task_mgr_tasks_summary_v001 {}
 
 explore: cdf_a0003_file_listing_master {}
 

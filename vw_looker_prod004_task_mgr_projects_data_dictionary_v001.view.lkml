@@ -1,5 +1,5 @@
-view: vw_looker_prod004_task_mgr_projects_data_dictionary_v001 {
-  sql_table_name: dbo.vw_looker_PROD004_TaskMgrProjects_DataDictionary_v001 ;;
+view: vw_looker_prod003_task_mgr_projects_data_dictionary_v001 {
+  sql_table_name: dbo.vw_looker_PROD003_TaskMgrProjects_DataDictionary_v001 ;;
 
   dimension: field_name {
     type: string
