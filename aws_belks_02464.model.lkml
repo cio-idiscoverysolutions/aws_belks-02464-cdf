@@ -142,6 +142,8 @@ explore: vw_looker_prod003_task_mgr_projects_table_v001 {}
 
 explore: vw_looker_prod004_task_mgr_tasks_table_v001 {}
 
+explore: vw_looker_prod005_corvel_data_dictionary_v001 {}
+
 
 # - explore: cdf_catalog
 
