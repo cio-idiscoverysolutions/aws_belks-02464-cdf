@@ -15,6 +15,11 @@ view: cdf_corvel_20180927_master {
     sql: ${TABLE}."Accident Date" ;;
   }
 
+  dimension: accident_description {
+    type: string
+    sql: ${TABLE}."AccidentDescription" ;;
+  }
+
   dimension: claim_number {
     type: string
     sql: ${TABLE}."Claim Number" ;;
