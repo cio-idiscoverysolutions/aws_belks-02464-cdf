@@ -14,6 +14,14 @@ explore: tracker_summary_matrix {}
 
 explore: tracker_source_matrix {}
 
+explore: molly_test {
+  join: molly_test1 {
+    type: inner
+    relationship: many_to_one
+    sql_on: ${molly_test.ppl_id} = ${molly_test1.ppl_id} ;;
+  }
+}
+
 explore: vw_looker_emp_schedule_v001   {}
 
 explore: cdf_reflexis_emp_schedule_20180821_001_employee_details_person_id_master {}
