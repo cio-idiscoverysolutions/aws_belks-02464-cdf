@@ -4,7 +4,7 @@ view: molly_test1 {
 
   dimension: full_name {
     type: string
-    sql: ${TABLE}."ful_name" ;;
+    sql: ${TABLE}."full_name" ;;
   }
 
   dimension: ppl_id {
