@@ -16,13 +16,12 @@ view: molly_test {
       drill_fields: []
     }
 
-  measure: Date_beg_lcl {
-    type: min
-    drill_fields: []
+  measure: minDate {
+    sql: MIN(${TABLE}."date_beg_lcl") ;;
   }
 
-  measure: date_Beg_lcl {
-    type: max
-    drill_fields: []
+  measure: maxDate {
+    sql: MAX(${TABLE}."date_beg_lcl") ;;
   }
+
  }
