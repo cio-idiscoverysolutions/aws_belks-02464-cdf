@@ -16,13 +16,13 @@ view: molly_test {
       drill_fields: []
     }
 
-  measure: min {
+  measure: Date_beg_lcl {
     type: min
-    drill_fields: [date_beg_lcl]
+    drill_fields: []
   }
 
-  measure: max {
+  measure: date_Beg_lcl {
     type: max
-    drill_fields: [date_beg_lcl]
+    drill_fields: []
   }
  }
