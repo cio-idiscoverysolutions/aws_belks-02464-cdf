@@ -7,7 +7,7 @@ view: molly_test {
   }
 
     dimension: date_beg_lcl {
-      type: date_time
+      type: date
       sql: ${TABLE}."date_beg_lcl" ;;
     }
 
