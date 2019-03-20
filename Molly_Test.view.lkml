@@ -6,10 +6,14 @@ view: molly_test {
     sql: ${TABLE}."ppl_id" ;;
   }
 
-    dimension: date_beg_lcl {
-      type: date_fiscal_month_num
+    dimension: date_beg_lcl_yr {
+      type: date_year
       sql: ${TABLE}."date_beg_lcl" ;;
     }
+  dimension: date_beg_lcl_mn {
+    type: date_month
+    sql: ${TABLE}."date_beg_lcl" ;;
+  }
 
     measure: count {
       type: count
