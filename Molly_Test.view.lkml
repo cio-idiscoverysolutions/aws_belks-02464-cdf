@@ -17,10 +17,12 @@ view: molly_test {
     }
 
   measure: minDate {
+    type:  date_time
     sql: MIN(${TABLE}."date_beg_lcl") ;;
   }
 
   measure: maxDate {
+    type:  date_time
     sql: MAX(${TABLE}."date_beg_lcl") ;;
   }
 
